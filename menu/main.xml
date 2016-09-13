@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu>
+    <item app:icon="@drawable/ic_home_white_24dp" app:id="@id/home_shortcut" app:orderInCategory="100" app:title="Home" app:showAsAction="2" />
+</menu>
