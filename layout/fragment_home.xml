@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1"
+    <RelativeLayout android:id="@id/homeTopContainer" android:background="@color/colorPrimary" android:layout_width="-1" android:layout_height="104dp">
+        <HorizontalScrollView android:id="@id/homeScrollView" android:background="@color/colorPrimary" android:layout_width="-1" android:layout_height="64dp">
+            <LinearLayout android:orientation="0" android:layout_width="-2" android:layout_height="-1">
+                <RelativeLayout android:id="@id/homeBusContainer" android:background="@color/colorPrimary" android:clickable="true" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/homeBusIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/ic_directions_bus_black_24dp" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/homeBusText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Bus" android:layout_below="@id/homeBusIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/homeMetroContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/homeMetroIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/ic_directions_subway_black_24dp" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/homeMetroText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Metro" android:layout_below="@id/homeMetroIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/homeAutoContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/homeAutoIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/auto_icon" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/homeAutoText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Auto" android:layout_below="@id/homeAutoIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/homeTrainContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/homeTrainIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/ic_directions_railway_black_24dp" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/homeTrainText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Train" android:layout_below="@id/homeTrainIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/homeTramContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/homeTramIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/ic_directions_tram_black_24dp" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/homeTramText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Tram" android:layout_below="@id/homeTramIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/homeTaxiContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/homeTaxiIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/ic_local_taxi_black_24dp" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/homeTaxiText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Taxi" android:layout_below="@id/homeTaxiIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/homeFerryContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/homeFerryIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/ic_directions_boat_black_24dp" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/homeFerryText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Ferry" android:layout_below="@id/homeFerryIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/homeEmergencyContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <ImageView android:id="@id/homeEmergencyIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/ic_local_hospital_black_24dp" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/homeEmergencyText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Emergency" android:layout_below="@id/homeEmergencyIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <View android:background="@color/colorPrimary" android:layout_width="1dp" android:layout_height="64dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        <LinearLayout android:gravity="11" android:orientation="0" android:layout_width="-1" android:layout_height="40dp" android:layout_below="@id/homeScrollView">
+            <RelativeLayout android:id="@id/homeButtonLeft" android:background="@drawable/capsule_small_left_button" android:layout_width="80dp" android:layout_height="24dp">
+                <TextView android:textColor="@color/colorAccent" android:gravity="11" android:id="@id/homeButtonLeftText" android:layout_width="-1" android:layout_height="-1" android:text="Favourites" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/homeButtonRight" android:background="@drawable/capsule_small_right_button_deact" android:layout_width="80dp" android:layout_height="24dp" android:layout_marginLeft="1dp">
+                <TextView android:textColor="#ffffff" android:gravity="11" android:id="@id/homeButtonRightText" android:layout_width="-1" android:layout_height="-1" android:text="Recent" />
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/homeList" android:background="#ffffff" android:layout_width="-1" android:layout_height="-2" android:layout_below="@id/homeTopContainer" />
+    <android.support.design.widget.FloatingActionButton android:id="@id/fab" android:layout_width="-2" android:layout_height="-2" android:layout_margin="@dimen/fab_margin" android:src="@drawable/add_button" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+    <RelativeLayout android:id="@id/homeTutorial" android:layout_width="-1" android:layout_height="-1" android:layout_below="@id/homeTopContainer">
+        <TextView android:textSize="30sp" android:textColor="@color/colorAccent_0_6" android:gravity="11" android:id="@id/homeTutorialText" android:padding="8dp" android:layout_width="-1" android:layout_height="-2" android:text="Click the floating button to add favourites." android:layout_centerInParent="true" />
+        <ImageView android:layout_width="-1" android:layout_height="-1" android:src="@color/colorAccent" android:alpha="0.1" />
+    </RelativeLayout>
+</RelativeLayout>

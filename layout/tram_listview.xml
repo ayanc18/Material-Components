@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="64dp"
+    <RelativeLayout android:id="@id/tramNumberHolder" android:background="@drawable/background_square_yellow" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="4dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/tramImage" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="2dp" android:src="@drawable/ic_directions_tram_black_24dp" android:tint="#ffffff" android:layout_below="@id/tramNumberText" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12sp" android:textStyle="1" android:textColor="#ffffff" android:gravity="11" android:id="@id/tramNumberText" android:layout_width="56dp" android:layout_height="28dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <TextView android:textSize="14sp" android:textColor="@color/colorAccent_0_8" android:gravity="10" android:id="@id/tramDepotText" android:layout_width="-1" android:layout_height="40dp" android:layout_marginLeft="16dp" android:layout_marginRight="4dp" android:text="Depot - " android:layout_toLeftOf="@id/tramTimeHolder" android:layout_toRightOf="@id/tramNumberHolder" android:layout_alignParentTop="true" />
+    <TextView android:textSize="12sp" android:textColor="@color/colorAccent_0_4" android:gravity="10" android:id="@id/tramWayText" android:layout_width="-1" android:layout_height="24dp" android:layout_marginLeft="16dp" android:layout_marginRight="4dp" android:layout_toLeftOf="@id/tramTimeHolder" android:layout_toRightOf="@id/tramNumberHolder" android:layout_below="@id/tramDepotText" />
+    <RelativeLayout android:id="@id/tramTimeHolder" android:layout_width="128dp" android:layout_height="-1" android:layout_alignParentRight="true">
+        <View android:background="@color/colorAccent_0_2" android:layout_width="1dp" android:layout_height="36dp" android:layout_centerVertical="true" />
+        <TextView android:textSize="14sp" android:textColor="@color/colorAccent_0_8" android:gravity="10" android:id="@id/tramFirstText" android:layout_width="-1" android:layout_height="40dp" android:layout_marginLeft="8dp" android:text="First Tram - " />
+        <TextView android:textSize="12sp" android:textColor="@color/colorAccent_0_4" android:gravity="10" android:id="@id/tramLastText" android:layout_width="-1" android:layout_height="24dp" android:layout_marginLeft="8dp" android:text="Last Tram - " android:layout_below="@id/tramFirstText" />
+    </RelativeLayout>
+</RelativeLayout>

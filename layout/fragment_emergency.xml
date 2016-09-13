@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1"
+    <RelativeLayout android:id="@id/emergencyTopContainer" android:background="@color/colorPrimary" android:layout_width="-1" android:layout_height="64dp">
+        <HorizontalScrollView android:id="@id/emergencyScrollView" android:background="@color/colorPrimary" android:layout_width="-1" android:layout_height="64dp">
+            <LinearLayout android:orientation="0" android:layout_width="-2" android:layout_height="-1">
+                <RelativeLayout android:id="@id/emergencyPoliceContainer" android:background="@color/colorPrimary" android:clickable="true" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/emergencyPoliceIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/police_icon" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/emergencyPoliceText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Police" android:layout_below="@id/emergencyPoliceIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/emergencyFireStationContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/emergencyFireStationIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/firestation_icon" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/emergencyFireStationText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Fire Station" android:layout_below="@id/emergencyFireStationIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/emergencyHospitalContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/emergencyHospitalIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/ic_local_hospital_black_24dp" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/emergencyHospitalText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Hospital" android:layout_below="@id/emergencyHospitalIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/emergencyWomenContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/emergencyWomenIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/w_safety" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/emergencyWomenText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="W Helpline" android:layout_below="@id/emergencyWomenIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/emergencyBloodContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/emergencyBloodIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/blood_bank" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/emergencyBloodText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Blood Bank" android:layout_below="@id/emergencyBloodIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/emergencyTouristContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/emergencyTouristIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/tourist_icon" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/emergencyTouristText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Tourist" android:layout_below="@id/emergencyTouristIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/emergencyMiscContainer" android:layout_width="90dp" android:layout_height="-1">
+                    <View android:background="#dddddd" android:layout_width="1dp" android:layout_height="32dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <ImageView android:id="@id/emergencyMiscIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="12dp" android:src="@drawable/misc_icon" android:tint="#ffffff" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14sp" android:textColor="#ffffff" android:id="@id/emergencyMiscText" android:layout_width="-2" android:layout_height="-2" android:layout_marginTop="6dp" android:text="Misc." android:layout_below="@id/emergencyMiscIcon" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </HorizontalScrollView>
+        <View android:background="@color/colorPrimary" android:layout_width="1dp" android:layout_height="64dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ListView android:id="@id/emergencyList" android:background="#ffffff" android:layout_width="-1" android:layout_height="-2" android:layout_below="@id/emergencyTopContainer" />
+</RelativeLayout>

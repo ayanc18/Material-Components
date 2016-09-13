@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="0x106000d" android:clickable="true" android:layout_width="-1" android:layout_height="-1">
+    <ImageView android:id="@id/trainNumberTranslucentBackground" android:background="#000000" android:layout_width="-1" android:layout_height="-1" />
+    <RelativeLayout android:background="@drawable/transport_number_background" android:layout_width="340dp" android:layout_height="500dp" android:layout_marginTop="6dp" android:layout_centerHorizontal="true"
+        <RelativeLayout android:id="@id/trainNumberTopContainer" android:layout_width="-1" android:layout_height="50dp">
+            <ImageView android:id="@id/trainNumberIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginRight="8dp" android:src="@drawable/ic_directions_railway_black_24dp" android:tint="#ffffff" android:layout_toLeftOf="@id/trainNumberIconText" android:layout_centerVertical="true" />
+            <TextView android:textSize="20sp" android:textStyle="1" android:textColor="#ffffff" android:gravity="11" android:id="@id/trainNumberIconText" android:layout_width="-2" android:layout_height="-1" android:text="37587" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <ListView android:id="@id/trainNumberList" android:background="#ffffff" android:layout_width="-1" android:layout_height="400dp" android:divider="#ffffffff" android:layout_below="@id/trainNumberTopContainer" />
+        <TextView android:textSize="20sp" android:textColor="#ffffff" android:gravity="11" android:id="@id/trainNumberCloseButton" android:clickable="true" android:layout_width="340dp" android:layout_height="50dp" android:text="CLOSE" android:layout_below="@id/trainNumberList" />
+    </RelativeLayout>
+</RelativeLayout>

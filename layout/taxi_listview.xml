@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="64dp"
+    <RelativeLayout android:id="@id/taxiNumberHolder" android:background="@drawable/background_square_yellow" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="4dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/taxiImage" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="2dp" android:src="@drawable/ic_local_taxi_black_24dp" android:tint="#ffffff" android:layout_below="@id/taxiNumberText" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14sp" android:textStyle="1" android:textColor="#ffffff" android:gravity="11" android:id="@id/taxiNumberText" android:layout_width="56dp" android:layout_height="28dp" android:text="TAXI" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <TextView android:textSize="18sp" android:textColor="@color/colorAccent_0_8" android:gravity="10" android:id="@id/taxiSourceText" android:layout_width="-2" android:layout_height="32dp" android:layout_marginLeft="16dp" android:layout_marginRight="8dp" android:layout_toRightOf="@id/taxiNumberHolder" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+    <TextView android:textSize="20sp" android:textColor="@color/colorAccent_0_6" android:gravity="10" android:id="@id/taxiDestinationText" android:layout_width="-2" android:layout_height="32dp" android:layout_marginLeft="16dp" android:layout_marginRight="8dp" android:layout_toRightOf="@id/taxiNumberHolder" android:layout_below="@id/taxiSourceText" android:layout_alignParentRight="true" />
+</RelativeLayout>

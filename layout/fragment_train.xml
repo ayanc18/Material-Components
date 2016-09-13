@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1"
+    <RelativeLayout android:id="@id/topTrainPanel" android:background="@color/colorPrimary" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="-1" android:layout_height="192dp">
+        <LinearLayout android:gravity="1" android:orientation="0" android:layout_width="-1" android:layout_height="40dp" android:layout_alignParentTop="true">
+            <RelativeLayout android:id="@id/trainButtonLeft" android:background="@drawable/capsule_small_left_button_deact" android:layout_width="80dp" android:layout_height="24dp" android:layout_marginTop="8dp">
+                <TextView android:textColor="#ffffff" android:gravity="11" android:id="@id/trainButtonLeftText" android:layout_width="-1" android:layout_height="-1" android:text="Set Time" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/trainButtonRight" android:background="@drawable/capsule_small_right_button_deact" android:layout_width="80dp" android:layout_height="24dp" android:layout_marginLeft="1dp" android:layout_marginTop="8dp">
+                <TextView android:textColor="#ffffff" android:gravity="11" android:id="@id/trainButtonRightText" android:layout_width="-1" android:layout_height="-1" android:text="Set Date" />
+            </RelativeLayout>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout android:theme="@style/AppTheme_MyStyle" android:id="@id/top_text" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="48dp" android:layout_marginTop="40dp" android:layout_marginRight="48dp">
+            <AutoCompleteTextView android:theme="@style/AppTheme_MyStyle" android:textSize="16sp" android:textColor="#ffffff" android:id="@id/sourceInput" android:focusableInTouchMode="true" android:layout_width="-1" android:layout_height="-2" android:hint="Enter Source..." android:layout_alignLeft="@id/top_text" android:layout_alignParentTop="true" android:inputType="81001" />
+        </android.support.design.widget.TextInputLayout>
+        <ImageView android:id="@id/reverseSourceDestination" android:layout_width="-2" android:layout_height="-2" android:layout_marginRight="8dp" android:src="@drawable/reversible_arrows" android:layout_alignTop="@id/bottom_text" android:layout_alignParentRight="true" />
+        <android.support.design.widget.TextInputLayout android:theme="@style/AppTheme_MyStyle" android:id="@id/bottom_text" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="48dp" android:layout_marginTop="2dp" android:layout_marginRight="48dp" android:layout_below="@id/top_text">
+            <AutoCompleteTextView android:theme="@style/AppTheme_MyStyle" android:textSize="16sp" android:textColor="#ffffff" android:id="@id/destinationInput" android:focusableInTouchMode="true" android:layout_width="-1" android:layout_height="-2" android:hint="Enter Destination..." android:inputType="81001" />
+        </android.support.design.widget.TextInputLayout>
+        <ImageView android:id="@id/sourceDestinationImage" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="64dp" android:src="@drawable/source_destination_icon" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/searchTrain" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginTop="4dp" android:layout_below="@id/bottom_text" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="-1" android:layout_height="-1" android:src="@drawable/search_button" />
+            <ImageView android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="8dp" android:src="@drawable/ic_directions_railway_black_24dp" android:tint="#ffffff" android:layout_centerVertical="true" />
+            <TextView android:textSize="16dp" android:textColor="#ffffff" android:gravity="11" android:id="@id/searchTrainText" android:layout_width="-1" android:layout_height="-1" android:text="Search" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/trainList" android:background="#ffffff" android:layout_width="-1" android:layout_height="-2" android:layout_below="@id/topTrainPanel" />
+</RelativeLayout>

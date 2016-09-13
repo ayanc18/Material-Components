@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="40dp">
+    <ImageView android:id="@id/trainNumberListViewIcon" android:layout_width="-2" android:layout_height="-2" android:src="@drawable/transport_number_listview_icon_1" android:alpha="0.4" />
+    <TextView android:textSize="14sp" android:textColor="@color/colorAccent_0_8" android:gravity="10" android:id="@id/trainNumberListViewStoppage" android:layout_width="20dp" android:layout_height="-1" android:layout_marginRight="2dp" android:text="" android:layout_toLeftOf="@id/trainNumberListViewTime" android:layout_toRightOf="@id/trainNumberListViewIcon" android:layout_alignParentTop="true" />
+    <TextView android:textSize="20sp" android:textColor="@color/colorAccent_0_6" android:gravity="11" android:id="@id/trainNumberListViewTime" android:layout_width="64dp" android:layout_height="-1" android:text="22:49" android:layout_alignParentRight="true" />
+    <View android:background="@color/colorAccent_0_2" android:layout_width="1dp" android:layout_height="24dp" android:layout_toLeftOf="@id/trainNumberListViewTime" android:layout_centerVertical="true" />
+</RelativeLayout>

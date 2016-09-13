@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="-1"
+    <RelativeLayout android:id="@id/topTramPanel" android:background="@color/colorPrimary" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="-1" android:layout_height="160dp">
+        <android.support.design.widget.TextInputLayout android:theme="@style/AppTheme_MyStyle" android:id="@id/top_text" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="48dp" android:layout_marginTop="8dp" android:layout_marginRight="48dp">
+            <AutoCompleteTextView android:theme="@style/AppTheme_MyStyle" android:textSize="16sp" android:textColor="#ffffff" android:id="@id/sourceInput" android:focusableInTouchMode="true" android:layout_width="-1" android:layout_height="-2" android:hint="Enter Source..." android:layout_alignLeft="@id/top_text" android:layout_alignParentTop="true" android:inputType="81001" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout android:theme="@style/AppTheme_MyStyle" android:id="@id/bottom_text" android:layout_width="-1" android:layout_height="-2" android:layout_marginLeft="48dp" android:layout_marginTop="2dp" android:layout_marginRight="48dp" android:layout_below="@id/top_text">
+            <AutoCompleteTextView android:theme="@style/AppTheme_MyStyle" android:textSize="16sp" android:textColor="#ffffff" android:id="@id/destinationInput" android:focusableInTouchMode="true" android:layout_width="-1" android:layout_height="-2" android:hint="Enter Destination..." android:inputType="81001" />
+        </android.support.design.widget.TextInputLayout>
+        <ImageView android:id="@id/sourceDestinationImage" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginTop="32dp" android:src="@drawable/source_destination_icon" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/searchTram" android:layout_width="120dp" android:layout_height="30dp" android:layout_marginTop="4dp" android:layout_below="@id/bottom_text" android:layout_centerHorizontal="true">
+            <ImageView android:layout_width="-1" android:layout_height="-1" android:src="@drawable/search_button" />
+            <ImageView android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="8dp" android:src="@drawable/ic_directions_tram_black_24dp" android:tint="#ffffff" android:layout_centerVertical="true" />
+            <TextView android:textSize="16dp" android:textColor="#ffffff" android:gravity="11" android:id="@id/searchTramText" android:layout_width="-1" android:layout_height="-1" android:text="Search" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <ListView android:id="@id/tramList" android:focusable="true" android:layout_width="-1" android:layout_height="-2" android:layout_below="@id/topTramPanel" />
+</RelativeLayout>

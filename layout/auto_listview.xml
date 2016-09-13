@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout app:orientation="1" app:layout_width="-1" app:layout_height="112dp"
+    <RelativeLayout app:id="@id/autoNumberHolder" app:background="@drawable/background_square_yellow" app:layout_width="56dp" app:layout_height="56dp" app:layout_marginLeft="4dp" app:layout_marginTop="4dp" app:layout_alignParentLeft="true">
+        <ImageView app:id="@id/autoImage" app:layout_width="-2" app:layout_height="-2" app:layout_marginBottom="2dp" app:src="@drawable/auto_icon" app:tint="#ffffff" app:layout_below="@id/autoHolderText" app:layout_centerHorizontal="true" />
+        <TextView app:textSize="14sp" app:textStyle="1" app:textColor="#ffffff" app:gravity="11" app:id="@id/autoHolderText" app:layout_width="56dp" app:layout_height="28dp" app:text="AUTO" app:layout_alignParentLeft="true" app:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout app:id="@id/autoSourceTextHolder" app:layout_width="-2" app:layout_height="56dp" app:layout_toRightOf="@id/autoNumberHolder" app:layout_alignParentTop="true" app:layout_alignParentRight="true">
+        <TextView app:textSize="18sp" app:textColor="@color/colorAccent_0_8" app:gravity="800013" app:id="@id/autoSourceText" app:background="@color/colorWhite" app:layout_width="-1" app:layout_height="48dp" app:layout_marginLeft="8dp" app:layout_marginRight="8dp" app:layout_toLeftOf="@id/sourceFab" app:layout_centerVertical="true" />
+        <android.support.design.widget.FloatingActionButton app:id="@id/sourceFab" app:layout_width="48dp" app:layout_height="48dp" app:layout_marginRight="8dp" app:src="@drawable/ic_place_white_36dp" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:elevation="0dp" app:backgroundTint="@color/colorAccent" />
+    </RelativeLayout>
+    <RelativeLayout app:id="@id/autoDestinationTextHolder" app:layout_width="-2" app:layout_height="56dp" app:layout_toRightOf="@id/autoNumberHolder" app:layout_below="@id/autoSourceTextHolder" app:layout_alignParentRight="true">
+        <TextView app:textSize="14sp" app:textColor="@color/colorAccent_0_6" app:gravity="800013" app:id="@id/autoDestinationText" app:background="@color/colorWhite" app:focusable="true" app:layout_width="-1" app:layout_height="48dp" app:layout_marginLeft="8dp" app:layout_marginRight="8dp" app:layout_toLeftOf="@id/destinationFab" app:layout_centerVertical="true" />
+        <android.support.design.widget.FloatingActionButton app:id="@id/destinationFab" app:layout_width="48dp" app:layout_height="48dp" app:layout_marginRight="8dp" app:src="@drawable/ic_place_white_36dp" app:tint="@color/colorWhite" app:layout_alignParentRight="true" app:layout_centerVertical="true" app:elevation="0dp" app:backgroundTint="@color/colorAccent_0_8" />
+        <View app:background="@color/colorAccent_0_4" app:layout_width="-1" app:layout_height="1dp" app:layout_marginLeft="8dp" app:layout_marginRight="8dp" app:layout_toLeftOf="@id/destinationFab" app:layout_alignParentTop="true" />
+    </RelativeLayout>
+</RelativeLayout>

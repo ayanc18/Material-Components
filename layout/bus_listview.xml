@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="64dp"
+    <RelativeLayout android:id="@id/busNumberHolder" android:background="@drawable/background_square_yellow" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="4dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/busImage" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="2dp" android:src="@drawable/ic_directions_bus_black_24dp" android:tint="#ffffff" android:layout_below="@id/busNumberText" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="12sp" android:textStyle="1" android:textColor="#ffffff" android:gravity="11" android:id="@id/busNumberText" android:layout_width="56dp" android:layout_height="28dp" android:text="MINI BUS 124" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/colorAccent_0_8" android:gravity="10" android:id="@id/busSourceText" android:layout_width="-2" android:layout_height="40dp" android:layout_marginLeft="16dp" android:layout_marginRight="8dp" android:layout_toLeftOf="@id/busACType" android:layout_toRightOf="@id/busNumberHolder" android:layout_alignParentTop="true" />
+    <TextView android:textSize="12sp" android:textColor="@color/colorAccent_0_6" android:gravity="10" android:id="@id/busDestinationText" android:layout_width="-2" android:layout_height="24dp" android:layout_marginLeft="16dp" android:layout_marginRight="8dp" android:layout_toLeftOf="@id/busACType" android:layout_toRightOf="@id/busNumberHolder" android:layout_below="@id/busSourceText" />
+    <RelativeLayout android:id="@id/busACType" android:background="@drawable/ac_background" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginRight="8dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/busACIcon" android:layout_width="-2" android:layout_height="-2" android:src="@drawable/ic_ac_unit_white_24dp" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

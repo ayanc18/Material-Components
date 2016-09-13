@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="64dp"
+    <RelativeLayout android:id="@id/trainNumberHolder" android:background="@drawable/background_square_yellow" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="4dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/trainImage" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="2dp" android:src="@drawable/ic_directions_railway_black_24dp" android:tint="#ffffff" android:layout_below="@id/trainNumberText" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18sp" android:textStyle="1" android:textColor="#ffffff" android:gravity="11" android:id="@id/trainNumberText" android:layout_width="56dp" android:layout_height="28dp" android:text="88888" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <TextView android:textSize="16sp" android:textColor="@color/colorAccent_0_6" android:gravity="11" android:id="@id/trainNameText" android:layout_width="-2" android:layout_height="24dp" android:layout_marginLeft="64dp" android:text="LKPR-SDAH MATRIBHUMI LOCAL" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" />
+    <RelativeLayout android:layout_width="-2" android:layout_height="40dp" android:layout_marginLeft="64dp" android:layout_below="@id/trainNameText" android:layout_alignParentLeft="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="20sp" android:textColor="@color/colorAccent_0_8" android:gravity="11" android:id="@id/trainStartTimeText" android:layout_width="-2" android:layout_height="-1" android:text="Start - " android:layout_toLeftOf="@id/trainTimeDivider" android:layout_alignParentLeft="true" />
+        <View android:id="@id/trainTimeDivider" android:background="@color/colorAccent_0_2" android:layout_width="1dp" android:layout_height="24dp" android:layout_centerInParent="true" />
+        <TextView android:textSize="20sp" android:textColor="@color/colorAccent_0_8" android:gravity="11" android:id="@id/trainEndTimeText" android:layout_width="-2" android:layout_height="-1" android:text="Reach - " android:layout_toRightOf="@id/trainTimeDivider" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:id="@id/trainListViewBackgroundTint" android:layout_width="-1" android:layout_height="-1" android:src="#000000" />
+</RelativeLayout>

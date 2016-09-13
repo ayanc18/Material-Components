@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="-1" android:layout_height="64dp"
+    <RelativeLayout android:id="@id/metroNumberHolder" android:background="@drawable/background_square_yellow" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="4dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <ImageView android:id="@id/metroImage" android:layout_width="-2" android:layout_height="-2" android:layout_marginBottom="2dp" android:src="@drawable/ic_directions_subway_black_24dp" android:tint="#ffffff" android:layout_below="@id/metroSourceTimeText" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:gravity="11" android:id="@id/metroSourceTimeText" android:layout_width="56dp" android:layout_height="28dp" android:text="11:09" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/metroReachHolder" android:layout_width="-2" android:layout_height="64dp" android:layout_marginLeft="64dp" android:layout_marginRight="80dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+        <TextView android:textSize="16sp" android:textColor="@color/colorAccent_0_8" android:gravity="10" android:id="@id/metroReachText" android:layout_width="-2" android:layout_height="24dp" android:text="Reach" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="32sp" android:textColor="@color/colorAccent_0_8" android:gravity="11" android:id="@id/metroReachTimeText" android:layout_width="-2" android:layout_height="40dp" android:text="11:50" android:layout_below="@id/metroReachText" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <View android:background="@color/colorAccent_0_2" android:layout_width="1dp" android:layout_height="40dp" android:layout_marginRight="80dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <RelativeLayout android:layout_width="80dp" android:layout_height="64dp" android:layout_alignParentRight="true">
+        <TextView android:textSize="16sp" android:textColor="@color/colorAccent_0_6" android:gravity="11" android:id="@id/metroFareText" android:layout_width="-1" android:layout_height="24dp" android:text="Fare" />
+        <TextView android:textSize="20dp" android:textColor="@color/colorAccent_0_6" android:gravity="11" android:id="@id/metroFareValueText" android:layout_width="-1" android:layout_height="40dp" android:text="Rs." android:layout_below="@id/metroFareText" />
+    </RelativeLayout>
+    <ImageView android:id="@id/metroListViewBackgroundTint" android:layout_width="-1" android:layout_height="-1" android:src="#000000" />
+</RelativeLayout>

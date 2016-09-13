@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="0x106000d" android:clickable="true" android:layout_width="-1" android:layout_height="-1">
+    <ImageView android:id="@id/autoNumberTranslucentBackground" android:background="#000000" android:layout_width="-1" android:layout_height="-1" />
+    <RelativeLayout android:background="@drawable/transport_number_background" android:layout_width="340dp" android:layout_height="500dp" android:layout_marginTop="6dp" android:layout_centerHorizontal="true"
+        <RelativeLayout android:id="@id/autoNumberTopContainer" android:layout_width="-1" android:layout_height="50dp">
+            <ImageView android:id="@id/autoNumberIcon" android:layout_width="-2" android:layout_height="-2" android:layout_marginLeft="16dp" android:layout_marginRight="8dp" android:src="@drawable/auto_icon" android:tint="#ffffff" android:layout_toLeftOf="@id/autoNumberIconText" android:layout_centerVertical="true" />
+            <TextView android:textSize="16sp" android:textStyle="1" android:textColor="#ffffff" android:gravity="11" android:id="@id/autoNumberIconText" android:layout_width="-2" android:layout_height="-1" android:text="" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <com.google.android.gms.maps.MapView android:id="@id/map" android:clickable="true" android:layout_width="340dp" android:layout_height="400dp" android:layout_below="@id/autoNumberTopContainer" android:apiKey="@string/google_maps_key" />
+        <TextView android:textSize="20sp" android:textColor="#ffffff" android:gravity="11" android:id="@id/autoNumberCloseButton" android:clickable="true" android:layout_width="340dp" android:layout_height="50dp" android:text="CLOSE" android:layout_below="@id/map" />
+    </RelativeLayout>
+</RelativeLayout>

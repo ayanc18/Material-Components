@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:theme="@style/ThemeOverlay_AppCompat_Dark" android:background="@drawable/kolkata_navigator_header_2" android:layout_width="-1" android:layout_height="@dimen/nav_header_height" />
